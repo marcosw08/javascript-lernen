@@ -16,9 +16,6 @@ function geteilt() {
 function prozent() {
   setResultat(getWert1() * getWert2() / 100);
 }
-function wurzel() {
-  setResultat2(Math.sqrt(getWert3()))
-}
 
 function getWert1() {
   return getInputZahl('feld1');
@@ -32,9 +29,6 @@ function getWert3() {
 
 function setResultat(resultat) {
   setInput('resultat', resultat);
-}
-function setResultat2(resultat) {
-  setInput('resultat2', resultat);
 }
 
 function getInput(name) {
