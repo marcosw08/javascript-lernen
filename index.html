@@ -2,77 +2,31 @@
 <html>
 
 <head>
-  <title>Marc & Valentin's Web</title>
+  <title>javascript-lernen</title>
+  <!-- für später: <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+  <script src="test.js"></script>
   <link rel="stylesheet" type="text/css" href="test.css">
 </head>
 
 <body>
-    <script>
-        function test() {
-          setInput('outputTest', Date());
-        }
-        function plus() {
-          setResultat(getWert1() + getWert2());
-        }
-        function minus() {
-          setResultat(getWert1() - getWert2());
-        }
-        function mal() {
-          setResultat(getWert1() * getWert2());
-        }
-        function geteilt() {
-          setResultat(getWert1() / getWert2());
-        }
-        function prozent() {
-          setResultat(getWert1() * getWert2() / 100);
-        }
-        function wurzel() {
-          setResultat2(Math.sqrt(getWert3()))
-        }
-        
-        function getWert1() {
-          return getInputZahl('feld1');
-        }
-        function getWert2() {
-          return getInputZahl('feld2');
-        }
-        function getWert3() {
-          return getInputZahl('feld3');
-        }
-        function setResultat(resultat) {
-            setInput('resultat', resultat);
-        } 
-        function setResultat2(resultat) {
-            setInput('resultat2', resultat);
-        }
-        function getInput(name) {
-            return document.getElementById(name).value
-        }
-        function getInputZahl(name) {
-            return parseFloat(getInput(name))
-        }
-        function setInput(name, wert) {
-            document.getElementById(name).value = wert;
-        }
-    </script>
-    <div class="marmor">
-        <h1>Javascript, Programme</h1> <br><br><br><br><br>
-        <h1>Rechnen</h1>
-    <h2>Calculierer </h2>
+  <h1>Javascript</h1>
 
-    <p><input class=gross type="text" id="feld1"></p>
-    <p>
-      <button class=klein onclick="javascript:plus()">+</button>
-      <button class=klein onclick="javascript:minus()">-</button>
-      <button class=klein onclick="javascript:mal()">*</button>
-      <button class=klein onclick="javascript:geteilt()">:</button>
-      <button class=klein onclick="javascript:prozent()">%</button>
-    <p>
-      <input class=gross type="text" id="feld2" re>
-    </p>
-    <h2>=</h2>
-    <p> <input class=klein type=text id="resultat" readonly ></input></p>
-        </div>
+  <h2>Calculierer </h2>
+  <p><input class=gross type="text" id="feld1"></p>
+  <p>
+    <button class=klein onclick="javascript:plus()">+</button>
+    <button class=klein onclick="javascript:minus()">-</button>
+    <button class=klein onclick="javascript:mal()">*</button>
+    <button class=klein onclick="javascript:geteilt()">:</button>
+    <button class=klein onclick="javascript:prozent()">%</button>
+  </p>
+  <p>
+    <input class=gross type="text" id="feld2" re>
+  </p>
+  <h2>=</h2>
+  <p>
+    <input class=klein type=text id="resultat" readonly></input>
+  </p>
 </body>
 
 </html>
