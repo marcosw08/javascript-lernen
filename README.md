@@ -1,2 +1,2 @@
 # javascript-lernen
-Mit JavaScript Schulmaterial erarbeiten
+Mit JavaScript Schulmaterial erarbeiten.
