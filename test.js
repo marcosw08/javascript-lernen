@@ -1,3 +1,5 @@
+
+/*
 function test() {
   setInput('outputTest', Date());
 }
@@ -15,6 +17,26 @@ function geteilt() {
 }
 function prozent() {
   setResultat(getWert1() * getWert2() / 100);
+}
+*/
+
+function berechneErgebnis() {
+  var operation = getInput('operation'); // plus, minus, ...
+  var wert1 = getWert1();
+  var wert2 = getWert2();
+  var resultat = 0;
+  if(operation == "plus") {
+    resultat = wert1 + wert2;
+  } else if(operation == "minus") {
+    resultat = wert1 - wert2;
+  } else if(operation == "mal") {
+    resultat = wert1 * wert2;
+  } else if(operation == "geteilt") {
+    resultat = wert1 / wert2;
+  } else if(operation == "prozent") {
+    resultat = wert1 * wert2 / 100;
+  }
+  setResultat(resultat);
 }
 
 function getWert1() {

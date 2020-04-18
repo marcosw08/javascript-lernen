@@ -14,18 +14,18 @@
     <h2>Calculierer </h2>
     <p><input class=gross type="text" id="feld1"></p>
     <p>
-        <select id="cars">
-            <option value="volvo">+</option>
-            <option value="saab">-</option> 
-            <option value="opel">*</option>
-            <option value="audi">:</option>
-            <option value="bmw">%</option>
+        <select id="operation">
+            <option value="plus">+</option>
+            <option value="minus">-</option> 
+            <option value="mal">*</option>
+            <option value="geteilt">:</option>
+            <option value="prozent">%</option>
         </select>
     </p>
     <p>
         <input class=gross type="text" id="feld2" re>
     </p>
-    <h2>=</h2>
+    <p><button class="gross" onclick="javascript:berechneErgebnis()">=</button></p>
     <p>
         <input class=klein type=text id="resultat" readonly></input>
     </p>
