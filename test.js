@@ -1,25 +1,4 @@
 
-/*
-function test() {
-  setInput('outputTest', Date());
-}
-function plus() {
-  setResultat(getWert1() + getWert2());
-}
-function minus() {
-  setResultat(getWert1() - getWert2());
-}
-function mal() {
-  setResultat(getWert1() * getWert2());
-}
-function geteilt() {
-  setResultat(getWert1() / getWert2());
-}
-function prozent() {
-  setResultat(getWert1() * getWert2() / 100);
-}
-*/
-
 function berechneErgebnis() {
   var operation = getInput('operation'); // plus, minus, ...
   var wert1 = getWert1();
@@ -35,6 +14,11 @@ function berechneErgebnis() {
     resultat = wert1 / wert2;
   } else if(operation == "prozent") {
     resultat = wert1 * wert2 / 100;
+  }
+  if (isNaN(resultat)) {
+    resultat = "Das Krümelmonster ist traurig.";
+  } else if(!isFinite(resultat)) {
+    resultat = "Grösser als alles was es gibt (oder kleiner)."
   }
   setResultat(resultat);
 }
