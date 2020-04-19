@@ -5,13 +5,13 @@ body {
   margin: auto;
 }
 input {
-  width: 65%;
-  font-size: 45px;
+  width: 80%;
+  font-size: 40px;
 }
 select {
-    width: 100px;
+    width: 60px;
     font-size: 35px;
-    height: 90px;
+    height: 50px;
     color: white;
     background-color: green;
 }
