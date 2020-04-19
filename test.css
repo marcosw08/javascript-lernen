@@ -5,17 +5,17 @@ body {
   margin: auto;
 }
 input {
-  width: 100%;
+  width: 50%;
+  font-size: 70px;
 }
 select {
     width: 100px;
-    font-size: 50px;
+    font-size: 35px;
     height: 90px;
-    background-color: green;
     color: white;
+    background-color: green;
 }
 option {
-    background-color: green;
     color: white;
 }
 button.gross {
