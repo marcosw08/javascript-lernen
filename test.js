@@ -16,9 +16,9 @@ function berechneErgebnis() {
     resultat = wert1 * wert2 / 100;
   }
   if (isNaN(resultat)) {
-    resultat = "Das Krümelmonster ist traurig.";
+    resultat = "Dies ist keine Rechnung!";
   } else if(!isFinite(resultat)) {
-    resultat = "Grösser als alles was es gibt (oder kleiner)."
+    resultat = "Unendlich gross (oder klein)."
   }
   setResultat(resultat);
 }

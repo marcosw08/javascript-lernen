@@ -5,8 +5,8 @@ body {
   margin: auto;
 }
 input {
-  width: 50%;
-  font-size: 70px;
+  width: 65%;
+  font-size: 45px;
 }
 select {
     width: 100px;
@@ -33,4 +33,8 @@ button.gross {
 button.gross:hover {
     background-color: white;
     color:black;
+}
+.klein {
+  width: 100%;
+  font-size: 35px;
 }
