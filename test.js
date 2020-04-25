@@ -14,6 +14,12 @@ function berechneErgebnis() {
     resultat = wert1 / wert2;
   } else if(operation == "prozent") {
     resultat = wert1 * wert2 / 100;
+  } else if(operation== "hoch") {
+    resultat = 1;
+    var i;
+    for (i = 1; i <= wert2; i++) {
+       resultat = resultat * wert1;
+    }
   }
   if (isNaN(resultat)) {
     resultat = "Dies ist keine Rechnung!";
