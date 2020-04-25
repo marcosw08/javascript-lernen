@@ -17,8 +17,14 @@ function berechneErgebnis() {
   } else if(operation== "hoch") {
     resultat = 1;
     var i;
-    for (i = 1; i <= wert2; i++) {
-       resultat = resultat * wert1;
+    if(wert2 >= 0) {
+      for (i = 1; i <= wert2; i++) {
+        resultat = resultat * wert1;
+      }
+    } else {
+      for (i = 1; i <= -wert2; i++) {
+        resultat = resultat / wert1;
+      }
     }
   }
   if (isNaN(resultat)) {
